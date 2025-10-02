@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tastes of Africa — Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="recipes.html">Recipes</a>
+      <a href="regions.html">Regions</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" role="region" aria-label="Hero">
+      <div class="hero-overlay">
+        <h1>Welcome to Tastes of Africa</h1>
+        <p>Explore flavors, recipes, and food stories from across the continent</p>
+        <div class="video-wrap">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" title="Intro to African Cuisine" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-dishes" aria-label="Featured dishes">
+      <h2>Featured Dishes</h2>
+      <div class="cards">
+        <figure class="card">
+          <img src="images/jollof.jpg" alt="Jollof rice" />
+          <figcaption>
+            <h3><a href="recipes/jollof.html">Jollof Rice</a></h3>
+            <p>West African rice dish spiced with <mark>tomato</mark> and <mark>scotch bonnet</mark>.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="images/tagine.jpg" alt="Moroccan tagine" />
+          <figcaption>
+            <h3><a href="recipes/tagine.html">Tagine</a></h3>
+            <p>North African slow-cooked stew using preserved <mark>lemon</mark> and spices.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="images/injera.jpg" alt="Injera and stews" />
+          <figcaption>
+            <h3><a href="recipes/injera.html">Injera & Stews</a></h3>
+            <p>Ethiopian flatbread made from <mark>teff</mark>, served with spicy stews.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="explore-regions">
+      <h2>Explore by Region</h2>
+      <ul>
+        <li><a href="regions/west.html">West Africa</a></li>
+        <li><a href="regions/north.html">North Africa</a></li>
+        <li><a href="regions/east.html">East Africa</a></li>
+      </ul>
+    </section>
+
+    <section class="latest-trends">
+      <h2>Latest Food Trends</h2>
+
+      <article>
+        <h3>Urban Street Food Revival</h3>
+        <p>Vendors blend traditional spices with modern plating. <mark>Street food</mark> festivals grow across cities.</p>
+      </article>
+
+      <article>
+        <h3>Sustainable Ingredients</h3>
+        <p>Chefs use local <mark>millets</mark> and <mark>teff</mark> to reduce imports and support farmers.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <form class="newsletter" action="#" method="post" aria-label="Newsletter signup">
+      <label for="newsletter-email">Join the newsletter</label>
+      <input id="newsletter-email" type="email" name="email" placeholder="you@example.com" required>
+      <button type="submit">Subscribe</button>
+    </form>
+    <p>&copy; Tastes of Africa</p>
+  </footer>
+</body>
+</html>
