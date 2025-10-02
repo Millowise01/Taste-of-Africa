@@ -115,6 +115,11 @@ body {
   border-radius: 8px;
 }
 
+.card h3 a {
+  text-decoration: none;
+  color: var(--earth-brown);
+}
+
 /* LATEST TRENDS SECTION */
 .latest-trends article {
   background: white;
@@ -123,6 +128,13 @@ body {
   margin: 0.5rem 0;
 }
 
+/* Custom style for <mark> tag */
+mark {
+  background-color: var(--spice-yellow);
+  color: var(--earth-brown);
+  padding: 0.1em 0.3em;
+  border-radius: 4px;
+}
 /* CONTACT FORM */
 .contact-form {
   display: grid;
@@ -130,7 +142,7 @@ body {
   max-width: 640px;
 }
 
-input, textarea {
+input, textarea, select {
   padding: 0.6rem;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -179,54 +191,4 @@ footer {
   .hero { height: 40vh; }
   .video-wrap iframe { height: 200px; }
   footer { flex-direction: column; gap: 1rem; }
-}
-/* ===== Reset ===== */
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
-/* ===== Base Styles ===== */
-body {
-  font-family: 'Poppins', sans-serif;
-  background: #f9f5f0;
-  color: #333;
-  line-height: 1.6;
-  padding: 0;
-}
-
-/* ===== Header & Nav ===== */
-header { background: #8b0000; padding: 1rem; color: #fff; }
-nav ul { list-style: none; display: flex; gap: 1rem; }
-nav a { color: #fff; text-decoration: none; }
-nav a:hover { text-decoration: underline; }
-
-/* ===== Hero Section ===== */
-#hero {
-  background: url('images/hero-bg.jpg') no-repeat center/cover;
-  color: #fff; text-align: center; padding: 4rem;
-}
-
-/* ===== Featured Dishes ===== */
-#featured-dishes figure { display: inline-block; margin: 1rem; text-align: center; }
-#featured-dishes img { width: 250px; border-radius: 10px; box-shadow: 2px 2px 8px rgba(0,0,0,0.2); }
-
-/* ===== Regions ===== */
-#regions ul { display: flex; justify-content: space-around; margin: 2rem 0; }
-
-/* ===== Articles ===== */
-article { margin: 1rem 0; padding: 1rem; border-left: 4px solid #e67e22; background: #fff3e6; }
-
-/* ===== Forms ===== */
-form { display: flex; flex-direction: column; gap: 0.5rem; }
-input, textarea, select, button {
-  padding: 0.5rem; border: 1px solid #ccc; border-radius: 5px;
-}
-button { background: #8b0000; color: #fff; cursor: pointer; }
-button:hover { background: #a52a2a; }
-
-/* ===== Footer ===== */
-footer { margin-top: 2rem; padding: 1rem; background: #333; color: #fff; text-align: center; }
-
-/* ===== Responsive ===== */
-@media (max-width: 768px) {
-  nav ul { flex-direction: column; align-items: center; }
-  #featured-dishes figure { width: 100%; }
 }
