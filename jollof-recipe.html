@@ -5,30 +5,36 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Jollof Rice — Recipe</title>
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <nav class="site-nav">
       <a href="index.html">Home</a>
       <a href="recipes.html">Recipes</a>
+      <a href="regions.html">Regions</a>
     </nav>
   </header>
 
   <main>
     <article class="recipe">
       <h1>Jollof Rice</h1>
-      <img src="jollof.jpg" alt="Plate of Jollof rice" />
-      <p>Jollof rice is a West African staple. It uses tomato, onion, and pepper.</p>
+      <img src="jollof.jpg" alt="A vibrant plate of Jollof rice" />
+      <p>Jollof rice is a celebrated one-pot dish from West Africa, known for its distinctive smoky flavor and vibrant red color. It's a staple at parties and gatherings, made with long-grain rice, <mark>tomatoes</mark>, onions, and a blend of spices.</p>
 
       <section>
         <h2>Ingredients</h2>
         <ul>
           <li>2 cups long-grain rice</li>
-          <li>400g canned tomatoes or blended fresh tomatoes</li>
+          <li>400g plum tomatoes, blended</li>
           <li>1 large onion, chopped</li>
           <li>1 scotch bonnet pepper, to taste</li>
           <li>1/4 cup vegetable oil</li>
-          <li>Salt and stock cube</li>
+          <li>3 tbsp tomato paste</li>
+          <li>2 tsp curry powder, 1 tsp dried thyme</li>
+          <li>2 bay leaves</li>
+          <li>Salt and stock cubes to taste</li>
+          <li>2.5 cups chicken or vegetable stock</li>
         </ul>
       </section>
 
@@ -37,9 +43,11 @@
         <details>
           <summary>Show cooking steps</summary>
           <ol>
-            <li>Heat oil, fry onions until soft.</li>
-            <li>Add blended tomatoes and cook until reduced.</li>
-            <li>Add rice, stock, cover, simmer until cooked.</li>
+            <li>Heat oil in a large pot and sauté the chopped onions until soft. Add the tomato paste and fry for 5 minutes.</li>
+            <li>Add the blended tomatoes, scotch bonnet, thyme, curry powder, and bay leaves. Cook until the sauce is reduced and thick.</li>
+            <li>Stir in the washed rice, ensuring it's well-coated with the sauce. Add the stock, salt, and stock cubes.</li>
+            <li>Bring to a boil, then reduce heat to low, cover the pot tightly (with foil and a lid), and let it simmer for 20-30 minutes until the rice is cooked through.</li>
+            <li>Fluff the rice with a fork and serve hot.</li>
           </ol>
         </details>
       </section>
@@ -47,41 +55,25 @@
       <section>
         <h2>Video Tutorial</h2>
         <div class="video-wrap">
-          <iframe width="560" height="315" src="https://youtu.be/jDbUg4f9EFw?si=DQwQq6Mq9B-gGajD" title="Jollof tutorial" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/jDbUg4f9EFw" title="Jollof tutorial" frameborder="0" allowfullscreen></iframe>
         </div>
       </section>
 
       <section>
-        <h2>Origin</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=PLACEHOLDER" width="600" height="300" loading="lazy"></iframe>
-      </section>
-
-      <section>
-        <h2>Nutritional facts (optional)</h2>
-        <table>
-          <thead>
-            <tr><th>Per serving</th><th>Value</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Calories</td><td>420 kcal</td></tr>
-            <tr><td>Carbs</td><td>60 g</td></tr>
-          </tbody>
-        </table>
+        <h2>Country of Origin</h2>
+        <p>Jollof rice is a cultural icon in West Africa, with countries like Nigeria, Ghana, and Senegal having their own beloved variations.</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16341697.58837021!2d-1.9441126999999997!3d9.52166485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xf913f0694977c77%3A0x833a8b76a68332d!2sWest%20Africa!5e0!3m2!1sen!2sus!4v1678886700000" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </section>
     </article>
   </main>
-</body>
-</html>
-    <section class="newsletter">
-      <h2>Subscribe to our Newsletter</h2>
-      <form action="https://example.com/subscribe" method="post">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-        <button type="submit">Subscribe</button>
-      </form>
-    </section>
-  </main>
 
   <footer>
-    <p>&copy; 2024 Tastes of Africa</p>
+    <form class="newsletter" action="#" method="post" aria-label="Newsletter signup">
+      <label for="newsletter-email">Join the newsletter</label>
+      <input id="newsletter-email" type="email" name="email" placeholder="you@example.com" required>
+      <button type="submit">Subscribe</button>
+    </form>
+    <p>&copy; Tastes of Africa</p>
   </footer>
+</body>
+</html>
