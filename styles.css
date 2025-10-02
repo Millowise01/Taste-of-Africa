@@ -171,6 +171,21 @@ mark {
   margin-bottom: 1.5rem;
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
+
+/* Make region recipe sections a flex container */
+section.recipe {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  align-items: flex-start;
+}
+
+section.recipe img {
+  width: 150px; /* Smaller, fixed width for the image */
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
 /* CONTACT FORM */
 .contact-form {
   display: grid;
@@ -224,7 +239,23 @@ footer {
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 700px) {
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.5rem; }
+
+  .site-nav {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
   .hero { height: 40vh; }
+  .hero-overlay { padding: 1.5rem; }
+  .hero h1 { font-size: 1.6rem; }
+
   .video-wrap iframe { height: 200px; }
+
+  section.recipe {
+    flex-direction: column; /* Stack image and text vertically */
+  }
+
   footer { flex-direction: column; gap: 1rem; }
 }
