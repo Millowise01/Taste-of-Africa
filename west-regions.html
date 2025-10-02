@@ -5,23 +5,55 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Region — West Africa</title>
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>...nav...</header>
+  <header>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="recipes.html">Recipes</a>
+      <a href="regions.html">Regions</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
   <main>
-    <section>
-      <h1>West Africa</h1>
-      <p>Staples include rice, yams, plantain, and peanuts. Cooking often uses palm oil and slow stews.</p>
-      <h2>Example Dishes</h2>
-      <ul>
-        <li><a href="jollof-recipe.html">Jollof Rice</a></li>
-      </ul>
-      <div class="video-wrap">
-        <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="West African cooking" frameborder="0" allowfullscreen></iframe>
-      </div>
+    <h2>West African Recipes</h2>
+    <p>Staples include rice, yams, plantain, and peanuts. Cooking often uses <mark>palm oil</mark> and slow stews.</p>
+
+    <section class="recipe">
+        <h3>Jollof Rice</h3>
+        <img src="jollof.jpg" alt="Jollof Rice">
+        <p>The iconic one-pot rice dish, essential at any celebration, known for its smoky and spicy flavor profile.</p>
+        <a href="jollof-recipe.html">View Recipe</a>
     </section>
+
+    <section class="recipe">
+        <h3>Fufu and Egusi Soup</h3>
+        <img src="images/fufu-egusi.jpg" alt="Fufu and Egusi Soup">
+        <p>A thick, hearty soup made from ground melon seeds and leafy vegetables, served with a soft, starchy dough called Fufu.</p>
+        <a href="#">View Recipe</a> <!-- Placeholder link -->
+    </section>
+
+    <section class="recipe">
+        <h3>Suya</h3>
+        <img src="images/suya.jpg" alt="Suya skewers">
+        <p>Spicy skewered meat, a popular street food, which is grilled over an open flame and coated in a peanut-based spice mix.</p>
+        <a href="#">View Recipe</a> <!-- Placeholder link -->
+    </section>
+
+    <section class="recipe">
+        <h3>Fried Plantain (Dodo)</h3>
+        <img src="images/plantain.jpg" alt="Fried Plantain">
+        <p>Sweet, ripe plantains, sliced and deep-fried until golden brown. A delicious side dish or snack.</p>
+        <a href="#">View Recipe</a> <!-- Placeholder link -->
+    </section>
+
+    <div class="video-wrap">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="West African cooking" frameborder="0" allowfullscreen></iframe>
+    </div>
   </main>
-</body>
+
 <!-- Footer -->
   <footer>
     <form class="newsletter" action="#" method="post" aria-label="Newsletter signup">
@@ -32,4 +64,3 @@
     <p>&copy; Tastes of Africa</p>
   </footer>
 </html>
-
